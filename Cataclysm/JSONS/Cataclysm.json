@@ -83,7 +83,7 @@
 						"note filter",
 						"distortion"
 					],
-					"transition": "interrupt",
+					"transition": "normal",
 					"clicklessTransition": false,
 					"chord": "simultaneous",
 					"fastTwoNoteArp": false,
@@ -1859,7 +1859,7 @@
 									"forMod": false
 								}
 							],
-							"continuesLastPattern": false
+							"continuesLastPattern": true
 						}
 					]
 				},
@@ -4615,7 +4615,7 @@
 							"linearGain": 0.7071
 						}
 					],
-					"pan": 50,
+					"pan": 0,
 					"panDelay": 10,
 					"chorus": 71,
 					"fadeInSeconds": 0.0413,
@@ -6349,13 +6349,20 @@
 				{
 					"type": "drumset",
 					"volume": 13,
-					"eqFilter": [],
+					"eqFilter": [
+						{
+							"type": "low-pass",
+							"cutoffHz": 19027.31,
+							"linearGain": 0.7071
+						}
+					],
 					"eqFilterType": true,
 					"eqSimpleCut": 10,
 					"eqSimplePeak": 0,
 					"envelopeSpeed": 12,
 					"discreteEnvelope": false,
 					"preset": 960,
+					"eqSubFilters1": [],
 					"effects": [
 						"panning",
 						"reverb"
@@ -8238,7 +8245,7 @@
 			"instruments": [
 				{
 					"type": "spectrum",
-					"volume": 9,
+					"volume": 6,
 					"eqFilter": [],
 					"eqFilterType": false,
 					"eqSimpleCut": 10,
@@ -8261,7 +8268,20 @@
 					"noteFilterType": true,
 					"noteSimpleCut": 5,
 					"noteSimplePeak": 1,
-					"noteFilter": [],
+					"noteFilter": [
+						{
+							"type": "low-pass",
+							"cutoffHz": 1664.21,
+							"linearGain": 0.5
+						}
+					],
+					"noteSubFilters1": [
+						{
+							"type": "low-pass",
+							"cutoffHz": 1664.21,
+							"linearGain": 0.5
+						}
+					],
 					"pan": 0,
 					"panDelay": 10,
 					"reverb": 0,
@@ -8638,7 +8658,7 @@
 								{
 									"tick": 32,
 									"pitchBend": 0,
-									"volume": 30,
+									"volume": 60,
 									"forMod": true
 								}
 							],
